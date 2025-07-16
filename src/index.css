@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+:root {
+  --color-bg:        #0B0F1A;
+  --color-bg-alt:    #08101F;
+  --gradient-start:  #D100FF;
+  --gradient-end:    #00B1FF;
+  --color-text-primary:   #FFFFFF;
+  --color-text-secondary: #CED7E0;
+  --color-accent:         #00B1FF;
+  --shadow-neon:          rgba(0,177,255,0.4);
+  --shadow-neon-hover:    rgba(209,0,255,0.6);
+}
+

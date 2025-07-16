@@ -4,23 +4,34 @@
     width: 100%;
     background: #0B0F1A;
     z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    padding-top: 2rem;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); */
 }
 
-.Header nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 1rem 2rem;
+.HeaderNav {
+  /* max-width: 1200px;
+  margin: 0 auto; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* ↓ menos espacio a la izquierda, más a la derecha */
+  padding-left: 3rem;    /* antes era 2rem */
+  padding-right: 4rem;   /* antes era 2rem */
 }
 
 /* Logo */
+
+.navLeft {
+  display: flex;
+  align-items: center;
+}
+
 .HeaderImg img {
   height: 40px;
   filter:
-    drop-shadow(0 0 8px rgba(0, 177, 255, 0.6))
-    drop-shadow(0 0 4px rgba(0, 59, 127, 0.6));
+    drop-shadow(0 0 8px var(--color-accent))
+    drop-shadow(0 0 4px rgba(0,59,127,0.6));
   transition: filter 0.3s ease;
 }
 
@@ -30,8 +41,51 @@
     drop-shadow(0 0 6px rgba(0, 59, 127, 0.8));
 }
 
-/* Navegation links */
+.logoText {
+  margin-left: 0.5rem;
+  color: var(--color-text-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
 
-.Header nav > a {
-    
+/* links */
+
+.navRight {
+  display: flex;
+  align-items: center;
+}
+
+.navRight > a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  margin-left: 8rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: color 0.2s ease;
+}
+.navRight > a:hover {
+  color: var(--color-accent);
+}
+
+.navRight > a:last-child button {
+  margin-left: 2.5rem;
+  padding: 0.6rem 1.4rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: #fff;
+  box-shadow: 0 0 12px var(--shadow-neon);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.navRight > a:last-child button:hover {
+  box-shadow: 0 0 16px var(--shadow-neon-hover);
+  transform: translateY(-2px);
 }

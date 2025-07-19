@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import LogoFission from '../../assets/LogoFission.svg'
 import menuIcon from '../../assets/icons/menu-2.svg'
+import closeIcon from '../../assets/icons/x.svg'
 import '../css/Header.css'
 
 
@@ -22,9 +23,10 @@ function Header() {
                     <button
                     className={`menu-toggle${open ? ' open' : ''}`}
                     onClick={() => setOpen(o => !o)}
-                    aria-label='Toggle menu'
+                    aria-label={open ? 'Cerrar menu' : 'Abrir menu'}
                     >
-                        <img src={menuIcon} alt="" />
+                        <img src={open ? closeIcon : menuIcon} 
+                        alt={open ? 'Icono cerrar' : 'Icono menú'} />
                     </button>
                     <div className={`navRight${open ? ' open' : ''}`}>
                         <a href="">Nuestros Servicios</a>

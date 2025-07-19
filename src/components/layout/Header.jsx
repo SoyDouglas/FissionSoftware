@@ -1,8 +1,13 @@
+import { useState } from 'react'
 import LogoFission from '../../assets/LogoFission.svg'
+import menuIcon from '../../assets/icons/menu-2.svg'
 import '../css/Header.css'
-import '../../../src/index.css'
+
+
 
 function Header() {
+    const [open, setOpen] = useState(false)
+
     return (
         <>
             <header className='Header'>
@@ -13,7 +18,15 @@ function Header() {
                         </a>
                         <a href="" className='logoText'>FISSION</a>
                     </div>
-                    <div className='navRight'>
+                    {/* Icon for mobile */}
+                    <button
+                    className={`menu-toggle${open ? ' open' : ''}`}
+                    onClick={() => setOpen(o => !o)}
+                    aria-label='Toggle menu'
+                    >
+                        <img src={menuIcon} alt="" />
+                    </button>
+                    <div className={`navRight${open ? ' open' : ''}`}>
                         <a href="">Nuestros Servicios</a>
                         <a href="">Sobre nosotros</a>
                         <a href="">Contacto</a>

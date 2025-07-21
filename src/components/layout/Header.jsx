@@ -2,6 +2,8 @@ import { useState } from 'react'
 import LogoFission from '../../assets/LogoFission.svg'
 import menuIcon from '../../assets/icons/menu-2.svg'
 import closeIcon from '../../assets/icons/x.svg'
+import ArrowDown from '../../assets/icons/chevron-down.svg?react';
+import ArrowUp from '../../assets/icons/chevron-up.svg'
 import '../css/Header.css'
 
 
@@ -17,7 +19,7 @@ function Header() {
                         <a href="" className='HeaderImg'>
                             <img src={LogoFission} alt="Fission logo" />
                         </a>
-                        <a href="" className='logoText'>FISSION</a>
+                        <a href="" className='logoText'>Fission</a>
                     </div>
                     {/* Icon for mobile */}
                     <button
@@ -29,11 +31,17 @@ function Header() {
                         alt={open ? 'Icono cerrar' : 'Icono menú'} />
                     </button>
                     <div className={`navRight${open ? ' open' : ''}`}>
-                        <a href="">Nuestros Servicios</a>
-                        <a href="">Sobre nosotros</a>
-                        <a href="">Contacto</a>
                         <a href="">
-                            <button>CONTÁCTANOS</button>
+                            Nuestros Servicios < ArrowDown className="arrow-down"/> 
+                        </a>
+                        <a href="">
+                            Sobre nosotros < ArrowDown className="arrow-down"/> 
+                        </a>
+                        <a href="">
+                            Contacto < ArrowDown className="arrow-down"/> 
+                        </a>
+                        <a href="">
+                            <button>Contáctanos</button>
                         </a>
                     </div>
                 </nav>

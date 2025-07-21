@@ -3,7 +3,7 @@ import LogoFission from '../../assets/LogoFission.svg'
 import menuIcon from '../../assets/icons/menu-2.svg'
 import closeIcon from '../../assets/icons/x.svg'
 import ArrowDown from '../../assets/icons/chevron-down.svg?react';
-import ArrowUp from '../../assets/icons/chevron-up.svg'
+import ArrowUp from '../../assets/icons/chevron-up.svg?react'
 import '../css/Header.css'
 
 
@@ -32,13 +32,19 @@ function Header() {
                     </button>
                     <div className={`navRight${open ? ' open' : ''}`}>
                         <a href="">
-                            Nuestros Servicios < ArrowDown className="arrow-down"/> 
+                            Nuestros Servicios 
+                            < ArrowDown className="arrow-down"/> 
+                            < ArrowUp className="arrow-up"/>
                         </a>
                         <a href="">
-                            Sobre nosotros < ArrowDown className="arrow-down"/> 
+                            Sobre nosotros 
+                            < ArrowDown className="arrow-down"/>
+                            < ArrowUp className="arrow-up"/>
                         </a>
                         <a href="">
-                            Contacto < ArrowDown className="arrow-down"/> 
+                            Contacto 
+                            < ArrowDown className="arrow-down"/> 
+                            < ArrowUp className="arrow-up"/>
                         </a>
                         <a href="">
                             <button>Contáctanos</button>

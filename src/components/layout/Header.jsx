@@ -3,7 +3,6 @@ import LogoFission from '../../assets/LogoFission.svg'
 import menuIcon from '../../assets/icons/menu-2.svg'
 import closeIcon from '../../assets/icons/x.svg'
 import ArrowDown from '../../assets/icons/chevron-down.svg?react';
-import ArrowUp from '../../assets/icons/chevron-up.svg?react'
 import '../css/Header.css'
 
 

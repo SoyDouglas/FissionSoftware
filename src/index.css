@@ -13,6 +13,8 @@ body {
 }
 
 :root {
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
   --color-background: #FBF8FF;
   --color-primary: ##A78BFA;
   --color-secundary: #C4B5FD;

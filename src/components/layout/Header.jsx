@@ -43,7 +43,7 @@ function Header() {
                             < ArrowDown className="arrow"/>
                         </a>
                         <a href="">
-                            <button>Contáctanos</button>
+                            <button>Agenda una llamada</button>
                         </a>
                     </div>
                 </nav>

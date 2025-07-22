@@ -33,18 +33,15 @@ function Header() {
                     <div className={`navRight${open ? ' open' : ''}`}>
                         <a href="">
                             Nuestros Servicios 
-                            < ArrowDown className="arrow-down"/> 
-                            < ArrowUp className="arrow-up"/>
+                            < ArrowDown className="arrow"/>
                         </a>
                         <a href="">
                             Sobre nosotros 
-                            < ArrowDown className="arrow-down"/>
-                            < ArrowUp className="arrow-up"/>
+                            < ArrowDown className="arrow"/>
                         </a>
                         <a href="">
                             Contacto 
-                            < ArrowDown className="arrow-down"/> 
-                            < ArrowUp className="arrow-up"/>
+                            < ArrowDown className="arrow"/>
                         </a>
                         <a href="">
                             <button>Contáctanos</button>

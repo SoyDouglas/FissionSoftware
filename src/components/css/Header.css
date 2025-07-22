@@ -61,22 +61,21 @@
     transition: color 0.2s ease;
 }
 
+.navRight .arrow {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  transition: transform 0.25s ease; /* suaviza la rotación */
+  transform-origin: center;
+}
+
+.navRight > a:hover .arrow {
+  transform: rotate(180deg);
+}
+
 .navRight > a:hover {
     color: var(--color-accent);
 }
 
-/* Hide the arrowUp when its not time */
-.navRight .arrow-up {
-  display: none;
-}
-
-.navRight > a:hover .arrow-down {
-    display: none;
-}
-
-.navRight > a:hover .arrow-up {
-  display: inline-block;  
-}
 
 
 

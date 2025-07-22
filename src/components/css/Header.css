@@ -5,7 +5,7 @@
     background: var(--color-background);
     z-index: 1000;
     padding-top: 2rem;
-    position: relative;
+    /* position: relative; */
 }
 
 .HeaderNav {
@@ -34,7 +34,7 @@
 
 .logoText {
     margin-left: 0.5rem;
-    color: var(--color-text);
+    color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 2.6rem;
     font-weight: 600;
@@ -49,14 +49,15 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* Control the nav elements */
 .navRight > a {
     display: inline-flex;
     align-items: center;
-    color: var(--color-text);
+    color: black;
     text-decoration: none;
     margin-left: 8rem;
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.6rem;
     transition: color 0.2s ease;
 }
@@ -89,7 +90,7 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background: var(--color-text);
+  background: black;
   color: #fff;
   padding: 1.7rem;
   box-shadow: none;
@@ -97,8 +98,7 @@
 }
 
 .navRight > a:last-child button:hover {
-  /* Solo un ligero levantamiento, sin glow */
-  transform: translateY(-2px);
+  background: rgb(56, 56, 56);
 }
 
 /* Mobile toggle */

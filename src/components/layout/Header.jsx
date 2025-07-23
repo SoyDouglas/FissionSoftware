@@ -43,7 +43,7 @@ function Header() {
                             < ArrowDown className="arrow"/>
                         </a>
                         <a href="">
-                            <button>Agenda una llamada</button>
+                            <button className='header-cta'>Agenda una llamada</button>
                         </a>
                     </div>
                 </nav>

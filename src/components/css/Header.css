@@ -82,7 +82,7 @@
 
 /* Botón CTA */
 /* --------------------------- */
-.navRight > a:last-child button {
+.header-cta {
   padding: 0.6rem 1.4rem;
   font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
@@ -97,7 +97,7 @@
   transition: transform 0.2s ease;
 }
 
-.navRight > a:last-child button:hover {
+.header-cta:hover {
   background: rgb(56, 56, 56);
 }
 

@@ -1,16 +1,35 @@
+import { useEffect, useState } from 'react';
 import '../css/Hero.css'; 
 
 function Hero() {
+
+    const phrases = [
+        'Web a medida',
+        'IA Generativa',
+        'Marketing digital',
+        'E-Commerce personalizado'
+    ];
+
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((i) => (i + 1) % phrases.length);
+        }, 3000);
+
+        return () => clearInterval(interval); // clean 
+    }, []);
+
     return (
         <section className='Hero'>
-            <h1 className='hero-title'>Escala tu negocio con soluciones
-                <span className='accent'>Desarrollo web</span>
+            <h1 className='hero-title'>Acelera tu negocio con soluciones
+                <span className='accent'>{phrases[index]}</span>
             </h1>
 
-            <p className='hero-sub'>Equipo 100 % senior, timezone-aligned y listo para integrarse a tu sprint en 48 h.</p>
+            <p className='hero-sub'>Nos integramos a tu sprint mañana, entregamos demo cada 7 días</p>
             
             <ul className='hero-list'>
-                <li>10+ años de experiencia</li>
+                <li>Equipo bilingüe en tu zona horaria</li>
                 <li>Metodología ágil con entregas semanales</li>
                 <li>Garantía de devolución si no cumplimos el primer sprint</li>
             </ul>

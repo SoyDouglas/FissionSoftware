@@ -1,7 +1,7 @@
 .Hero {
   background-color: var(--color-background);
   min-height: 100vh;          /* o lo que necesites */
-  padding-top: 6rem;           /* igual a la altura del header, si se superponen */
+  padding-top: 10rem;           /* igual a la altura del header, si se superponen */
   position: relative;          /* sin z-index alto */
   margin-left: 2rem;
 }
@@ -20,6 +20,13 @@
   color: var(--color-accent);
   font-size: 6.8rem;
   font-weight: 800;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  display: inline-block;
+}
+
+.accent.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
 }
 
 .hero-sub{
@@ -37,7 +44,7 @@
 }
 
 .hero-cta {
-  padding: 0.6rem 1.4rem;
+  padding: 2rem;
   font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
@@ -46,11 +53,11 @@
   cursor: pointer;
   background: var(--color-accent);
   color: #fff;
-  padding: 1.7rem;
   box-shadow: none;
   transition: transform 0.2s ease;
+  margin-top: 2rem;
 }
 
 .hero-cta:hover {
-  background: var(--color-secundary);
+  background: #7b56eb;
 }

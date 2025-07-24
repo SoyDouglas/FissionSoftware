@@ -4,10 +4,12 @@ import '../css/Hero.css';
 function Hero() {
 
     const phrases = [
-        'Web a medida',
-        'IA Generativa',
-        'Marketing digital',
-        'E-Commerce personalizado'
+        'Desarrollo web',
+        'Integraciones de IA',
+        'Desarrollo mobile',
+        'Marketing Digital',
+        'Software',
+        'Automatización'
     ];
 
     const [index, setIndex] = useState(0);
@@ -30,7 +32,7 @@ function Hero() {
 
     return (
         <section className='Hero'>
-            <h1 className='hero-title'>Acelera tu negocio con soluciones
+            <h1 className='hero-title'>Lanza tu producto en 4 semanas con nuestro equipo de
                 <span className={`accent ${isAnimating ? 'fade-out' : 'fade-in'}`}>
                     {phrases[index]}
                 </span>

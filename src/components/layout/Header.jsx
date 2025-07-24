@@ -39,8 +39,8 @@ function Header() {
                             < ArrowDown className="arrow"/>
                         </a>
                         <a href="">
-                            Contacto 
-                            < ArrowDown className="arrow"/>
+                            Blog 
+                            {/* < ArrowDown className="arrow"/> */}
                         </a>
                         <a href="">
                             <button className='header-cta'>Agenda una llamada</button>

@@ -32,7 +32,7 @@ function Hero() {
 
     return (
         <section className='Hero'>
-            <h1 className='hero-title'>Lanza tu producto en 4 semanas con nuestro equipo de
+            <h1 className='hero-title'>Lanza tu producto en 4 semanas con nuestras soluciones de
                 <span className={`accent ${isAnimating ? 'fade-out' : 'fade-in'}`}>
                     {phrases[index]}
                 </span>
@@ -40,11 +40,11 @@ function Hero() {
 
             <p className='hero-sub'>Nos integramos a tu sprint mañana, entregamos demo cada 7 días</p>
             
-            <ul className='hero-list'>
+            {/* <ul className='hero-list'>
                 <li>Equipo bilingüe en tu zona horaria</li>
                 <li>Metodología ágil con entregas semanales</li>
                 <li>Garantía de devolución si no cumplimos el primer sprint</li>
-            </ul>
+            </ul> */}
 
             <button className='hero-cta'>Agenda una llamada</button>
         </section>

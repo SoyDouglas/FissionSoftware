@@ -1,8 +1,8 @@
 .Hero {
   background-color: var(--color-background);
-  min-height: 100vh;          /* o lo que necesites */
-  padding-top: 10rem;           /* igual a la altura del header, si se superponen */
-  position: relative;          /* sin z-index alto */
+  min-height: 100vh;         
+  padding-top: 10rem;           
+  position: relative;          
   margin-left: 2rem;
 }
 

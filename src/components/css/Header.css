@@ -133,7 +133,16 @@
     transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Responsive */
+body.menu-open {
+    overflow: hidden;
+    height: 100vh;
+}
+
+body.menu-open #root > *:not(.Header) {
+  display: none !important;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
     .logoText,
     .navRight {
@@ -156,6 +165,7 @@
         z-index: 1500;
         box-sizing: border-box;
         gap: 4rem;
+        overflow-y: auto;
     }
 
     .navRight.open > a {
@@ -181,7 +191,13 @@
     .HeaderNav {
         padding: 1rem;
     }
+
+    .arrow{
+        display: none;
+    }
 }
+
+
 
 
 

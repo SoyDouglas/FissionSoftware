@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import LogoFission from '../../assets/LogoFission.svg'
 import menuIcon from '../../assets/icons/menu-2.svg'
 import closeIcon from '../../assets/icons/x.svg'
@@ -9,6 +9,17 @@ import '../css/Header.css'
 
 function Header() {
     const [open, setOpen] = useState(false)
+
+    useEffect(() => {
+        const body = document.body;
+        if(open) {
+            body.classList.add('menu-open');
+        }else {
+            body.classList.remove('menu-open')
+        }
+
+        return () => body.classList.remove('menu-open');
+    }, [open]);
 
     return (
         <>

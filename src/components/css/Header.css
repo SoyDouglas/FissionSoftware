@@ -65,7 +65,7 @@
 .navRight .arrow {
   margin-left: 0.5rem;
   vertical-align: middle;
-  transition: transform 0.25s ease; /* suaviza la rotación */
+  transition: transform 0.25s ease; 
   transform-origin: center;
 }
 
@@ -79,9 +79,7 @@
 
 
 
-
-/* Botón CTA */
-/* --------------------------- */
+/* CTA Button*/
 .header-cta {
   padding: 0.6rem 1.4rem;
   font-family: 'Rajdhani', sans-serif;

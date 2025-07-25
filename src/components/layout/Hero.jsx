@@ -38,7 +38,7 @@ function Hero() {
                 </span>
             </h1>
 
-            <p className='hero-sub'>Nos integramos a tu sprint mañana, entregamos demo cada 7 días</p>
+            <p className='hero-sub'>Nos integramos a tu sprint mañana, <br />entregamos demo cada 7 días</p>
             
             {/* <ul className='hero-list'>
                 <li>Equipo bilingüe en tu zona horaria</li>

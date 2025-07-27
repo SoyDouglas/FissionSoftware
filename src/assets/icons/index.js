@@ -1,0 +1,6 @@
+export { default as DeviceMobile } from './device-mobile.svg'
+export { default as DeviceIMacCode } from './device-imac-code.svg'
+export { default as Automation } from './automation.svg'
+export { default as Sparkles} from './sparkles.svg'
+export { default as Speakerphone } from './speakerphone.svg'
+export { default as Message } from './message.svg'

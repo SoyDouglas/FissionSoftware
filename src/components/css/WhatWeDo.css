@@ -1,0 +1,102 @@
+.WhatWeDo {
+    background-color: var(--color-background);
+    font-family: var(--font-body);
+    padding: 1rem;
+}
+
+.WhatWeDo-Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.wwd-title {
+    font-size: 4.2rem;
+}
+
+.wwd-sub {
+    font-size: 2.4rem;
+    font-weight: 200;
+    color: black;
+    margin-top: 1.5rem;
+}
+
+.wwd-items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+.wwd-items li {
+    background: #e7ddef;
+    padding: 1rem;
+    border-radius: 10px;
+    color: black;
+    font-weight: 100;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 4rem auto;
+    max-width: 1200px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;  /* centra horizontalmente img + h3 */
+  align-items: center;      /* alinea ambos en el mismo eje vertical */
+  gap: 1rem;                /* separación entre icono y texto */
+}
+
+.card-title h3{
+    font-size: 2.4rem;
+}
+
+.card-title img{
+    background: #e7ddef;
+    padding: 1rem;
+    border-radius: 40px;
+}
+
+.card p{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: #FFFF;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0;
+}
+
+.card ul li,
+.card a.card-sub {
+  background: #e7ddef;      
+  padding: 0.8rem;           
+  border-radius: 10px;
+  color: black;
+  font-weight: 100;
+  font-size: 1.4rem;        
+  text-decoration: none;    
+  display: inline-block; 
+  margin-top: 2rem;   
+}

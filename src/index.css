@@ -9,17 +9,19 @@ html {
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-background);
 }
 
 :root {
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
   --color-background: #FBF8FF;
+  --color-background-alt: #f1eef7;
   --color-primary: ##A78BFA;
   --color-secundary: #C4B5FD;
   --color-accent: #7C3AED;
   --color-text: #312E81;
+  --color-text-alt: rgb(120, 118, 118);
 }
 
 

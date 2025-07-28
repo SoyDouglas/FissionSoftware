@@ -2,8 +2,8 @@
   background-color: #FFFF;
   min-height: 100vh;         
   padding-top: 10rem;           
-  position: relative;          
-  margin-left: 2rem;
+  position: relative;   
+  padding-left: 2rem;
 }
 
 .hero-title {

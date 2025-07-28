@@ -70,6 +70,18 @@
   background: #7b56eb;
 }
 
+/* Arc */
+.Hero::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;         
+  left: 0;
+  width: 100%;
+  height: 100px;        
+  background: #f7f5f8;  
+  border-top-left-radius: 50% 100px;
+  border-top-right-radius: 50% 100px;
+}
 
 /* Mobile */
 @media (max-width: 768px){

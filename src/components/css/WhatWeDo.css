@@ -32,9 +32,9 @@
 }
 
 .wwd-items li {
-    background: #e7ddef;
+    background: #ede9f0;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 12px;
     color: black;
     font-weight: 100;
 }
@@ -42,28 +42,30 @@
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
     list-style: none;
     padding: 0;
     margin: 4rem auto;
-    max-width: 1200px;
+    max-width: 1000px;
     font-size: 1.6rem;
     text-align: center;
 }
 
 .card-title {
   display: flex;
-  justify-content: center;  /* centra horizontalmente img + h3 */
-  align-items: center;      /* alinea ambos en el mismo eje vertical */
-  gap: 1rem;                /* separación entre icono y texto */
+  justify-content: left;  /* centra horizontalmente img + h3 */
+  align-items: center;    
+  gap: 1rem;                
 }
 
 .card-title h3{
     font-size: 2.4rem;
+    max-width: 180px;
+    text-align: left;
 }
 
 .card-title img{
-    background: #e7ddef;
+    background: #ede9f0;
     padding: 1rem;
     border-radius: 40px;
 }
@@ -71,12 +73,14 @@
 .card p{
     font-size: 1.8rem;
     margin-top: 1.5rem;
+    text-align: left;
+    /* max-width: 250px; */
 }
 
 .card {
     background: #FFFF;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 10px
 }
 
 .card ul {
@@ -86,17 +90,29 @@
     justify-content: center;
     gap: 3rem;
     padding: 0;
+    margin-top: 2rem;
 }
 
 .card ul li,
 .card a.card-sub {
-  background: #e7ddef;      
+  background: #ede9f0;      
   padding: 0.8rem;           
   border-radius: 10px;
   color: black;
   font-weight: 100;
   font-size: 1.4rem;        
   text-decoration: none;    
-  display: inline-block; 
-  margin-top: 2rem;   
+  display: inline-block;   
+}
+
+.card a {
+  display: inline-block;  /* para que el margin-top funcione */
+  margin-top: 1.5rem;
+  font-size: 1.6rem;      /* acorde al texto */
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.card a:hover{
+    color: var(--color-accent);
 }

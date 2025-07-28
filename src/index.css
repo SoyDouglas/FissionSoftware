@@ -15,8 +15,7 @@ body {
 :root {
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
-  --color-background: #FBF8FF;
-  --color-background-alt: #f1eef7;
+  --color-background: #f7f5f8;
   --color-primary: ##A78BFA;
   --color-secundary: #C4B5FD;
   --color-accent: #7C3AED;

@@ -19,7 +19,7 @@ function WhatWeDo() {
                     <li className='card'>
                         <div className='card-title'>
                             <img src={DeviceIMacCode} alt="" />
-                            <h3> Desarrollo web</h3>
+                            <h3> Desarrollo web (Full-Stack)</h3>
                         </div>
                         <p>MVP funcional listo para producción en -30 días</p>
                         <ul>

@@ -11,7 +11,7 @@ body {
   min-height: 100vh;         /* Ensure full viewport height */
   position: relative;        /* For positioning the bottom arc */
   padding: 10rem 2rem 6rem;   /* Top padding, side padding, and bottom padding to separate CTA from arc */
-  margin: 0 -2rem;           /* Break out of container padding to cover full width */
+  margin: 0;           /* Break out of container padding to cover full width */
   z-index: 0;                /* Establish stacking context */
 }
 

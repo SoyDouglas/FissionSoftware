@@ -8,11 +8,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .wwd-title {
     font-size: 4.2rem;
+    color: var(--color-text);
 }
 
 .wwd-sub {
@@ -35,7 +36,7 @@
     background: #ede9f0;
     padding: 1rem;
     border-radius: 12px;
-    color: black;
+    color: var(--color-text);
     font-weight: 100;
 }
 
@@ -98,7 +99,7 @@
   background: #ede9f0;      
   padding: 0.8rem;           
   border-radius: 10px;
-  color: black;
+  color: var(--color-text);
   font-weight: 100;
   font-size: 1.6rem;        
   text-decoration: none;    
@@ -116,4 +117,58 @@
 
 .card a:hover{
     color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  /* =====================================================
+     Estructura de la sección
+     ===================================================== */
+  .wwd-title,
+  .wwd-sub {
+    text-align: center;
+  }
+
+  .wwd-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  /* pasar de 3 columnas a 1 columna */
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 90%;
+    margin: 3rem auto;
+  }
+
+@media (max-width: 768px) {
+  /* 1) Tags “qué hacemos” en fila centrada */
+  .wwd-items {
+    flex-direction: row !important;    /* fila */
+    flex-wrap: nowrap;                 /* si caben los 3 sin saltar */
+    justify-content: center;           /* centrados */
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  /* 2) Grid de 1 columna con items centrados */
+  .card-grid {
+    grid-template-columns: 1fr;        /* 1 card por fila */
+    justify-items: center;             /* centra la card dentro del grid */
+    gap: 1.5rem;
+    max-width: 90%;
+    margin: 3rem auto;
+  }
+
+  /* 3) Limitar ancho de cada card para look más “cuadrado” */
+  .card {
+    width: 100%;
+    max-width: 350px;                  /* ajusta a tu gusto */
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+}
 }

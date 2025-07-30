@@ -163,10 +163,9 @@
     margin: 3rem auto;
   }
 
-  /* 3) Limitar ancho de cada card para look más “cuadrado” */
   .card {
     width: 100%;
-    max-width: 350px;                  /* ajusta a tu gusto */
+    max-width: 350px;                  
     padding: 1.5rem;
     box-sizing: border-box;
   }
@@ -175,7 +174,6 @@
 
 /* ===== Tablet: 769px – 1024px ===== */
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* —— Títulos centrados y con peso —— */
   .wwd-title {
     font-size: 4rem;
     text-align: center;
@@ -187,7 +185,6 @@
     margin-bottom: 1.5rem;
   }
 
-  /* —— Tags “Qué hacemos” en fila centrada —— */
   .wwd-items {
     display: flex;
     flex-direction: row;
@@ -198,7 +195,6 @@
     margin: 2rem 0;
   }
 
-  /* —— Grid de 2 columnas centradas —— */
   .card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -208,7 +204,7 @@
     justify-items: center;
   }
 
-  /* —— Cards más angostas y estilizadas —— */
+
   .card {
     width: 100%;
     max-width: 420px;
@@ -224,7 +220,6 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   }
 
-  /* —— Contenido interno centrado —— */
   .card-title {
     display: flex;
     justify-content: center;

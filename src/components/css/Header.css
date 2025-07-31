@@ -195,6 +195,67 @@ body.menu-open #root > *:not(.Header) {
     }
 }
 
+/* ===== Tablet: 769px – 1024px (same as mobile) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Hide logo text and links, show the menu toggle button */
+  .logoText,
+  .navRight {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* When menu is open, show nav links in a column */
+  .navRight.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    padding: 1.5rem;
+    z-index: 1500;
+    box-sizing: border-box;
+    gap: 4rem;
+    overflow-y: auto;
+  }
+
+  /* Style individual links inside the opened menu */
+  .navRight.open > a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: var(--color-text-muted);
+    font-size: 1.6rem;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  /* Make the last link’s button full-width */
+  .navRight.open > a:last-child button {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  /* Tweak the HeaderNav padding for tighter framing on tablet */
+  .HeaderNav {
+    padding: 1rem;
+  }
+
+  /* Hide the arrow icon inside links */
+  .arrow {
+    display: none;
+  }
+}
+
+
 
 
 

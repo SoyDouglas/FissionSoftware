@@ -1,15 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387.59 439.54">
   <defs>
     <style>
-      .cls-1 {
-        fill: #5a4a99;
-        stroke: #5a4a99;
-        stroke-miterlimit: 10;
-        stroke-width: 7px;
+      .cls-1, .cls-2 {
+        fill: #4abaeb;
       }
 
-      .cls-2 {
-        fill: #462778;
+      .cls-1 {
+        stroke: #4abaeb;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
       }
     </style>
   </defs>

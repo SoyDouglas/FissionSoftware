@@ -1,6 +1,6 @@
 /* Container for the "What We Do" section: sets background, font, and padding */
 .WhatWeDo {
-    background-color: var(--color-background); /* use theme background color */
+    background-color: var(--color-surface); /* use theme background color */
     font-family: var(--font-body);              /* use theme body font */
     padding: 1rem;                              /* inner spacing */
 }
@@ -23,7 +23,7 @@
 .wwd-sub {
     font-size: 2.4rem;         /* subtitle size */
     font-weight: 200;          /* very light font weight */
-    color: black;              /* black text */
+    color: var(--color-text-alt);              /* black text */
     margin-top: 1.5rem;        /* space above subtitle */
 }
 

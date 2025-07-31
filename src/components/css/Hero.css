@@ -7,7 +7,7 @@ body {
 
 /* Hero container: extend background full-bleed while preserving side padding as a frame and bottom padding for CTA spacing */
 .Hero {
-  background-color: #FFFFFF; /* Hero background color */
+  background-color: var(--color-background); /* Hero background color */
   min-height: 100vh;         /* Ensure full viewport height */
   position: relative;        /* For positioning the bottom arc */
   padding: 10rem 2rem 6rem;   /* Top padding, side padding, and bottom padding to separate CTA from arc */
@@ -24,12 +24,12 @@ body {
   line-height: 1.05;
   font-size: 6rem;
   max-width: 24ch;           /* Prevent overly long lines */
-  color: #000;
+  color: var(--color-text);
 }
 
 /* Accent span inside title */
 .hero-title .accent {
-  color: var(--color-accent);
+  color: var(--color-secondary);
   font-size: 6.8rem;
   font-weight: 800;
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -75,13 +75,13 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background: var(--color-accent);
+  background: var(--color-primary);
   color: #fff;
   transition: transform 0.2s ease;
   margin-top: 3rem;          /* Space above arc */
 }
 .hero-cta:hover {
-  background: #7b56eb;      /* Darken on hover for feedback */
+  background: var(--color-secondary);      /* Darken on hover for feedback */
 }
 
 /* Bottom arc for smooth transition to next section */
@@ -92,7 +92,7 @@ body {
   left: 0;
   width: 100%;
   height: 100px;
-  background: #f7f5f8;      /* Match next section's background */
+  background: var(--color-surface);      /* Match next section's background */
   border-top-left-radius: 50% 100px;
   border-top-right-radius: 50% 100px;
   z-index: -1;              /* Place arc behind hero content */

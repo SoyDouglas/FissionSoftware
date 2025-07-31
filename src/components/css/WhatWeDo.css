@@ -1,264 +1,289 @@
+/* Container for the "What We Do" section: sets background, font, and padding */
 .WhatWeDo {
-    background-color: var(--color-background);
-    font-family: var(--font-body);
-    padding: 1rem;
+    background-color: var(--color-background); /* use theme background color */
+    font-family: var(--font-body);              /* use theme body font */
+    padding: 1rem;                              /* inner spacing */
 }
 
+/* Inner text wrapper: centers content vertically in a column */
 .WhatWeDo-Text {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* margin-top: 2rem; */
+    flex-direction: column;    /* stack children vertically */
+    align-items: center;       /* center children horizontally */
+    /* margin-top: 2rem; */    /* optional top spacing (commented out) */
 }
 
+/* Main title styling: large font and main text color */
 .wwd-title {
-    font-size: 4.2rem;
-    color: var(--color-text);
+    font-size: 4.2rem;         /* very large heading */
+    color: var(--color-text);  /* use theme text color */
 }
 
+/* Subtitle styling: slightly smaller, light weight, black text */
 .wwd-sub {
-    font-size: 2.4rem;
-    font-weight: 200;
-    color: black;
-    margin-top: 1.5rem;
+    font-size: 2.4rem;         /* subtitle size */
+    font-weight: 200;          /* very light font weight */
+    color: black;              /* black text */
+    margin-top: 1.5rem;        /* space above subtitle */
 }
 
+/* List of items under the heading: horizontal layout with spacing */
 .wwd-items {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 3rem;
-    font-size: 1.6rem;
-    margin-top: 2rem;
+    display: flex;             /* use flexbox */
+    flex-direction: row;       /* horizontal list */
+    list-style: none;          /* remove bullet points */
+    gap: 3rem;                 /* space between items */
+    font-size: 1.6rem;         /* item text size */
+    margin-top: 2rem;          /* space above the list */
 }
 
+/* Individual item styling: light background, padding, and rounded corners */
 .wwd-items li {
-    background: #ede9f0;
-    padding: 1rem;
-    border-radius: 12px;
-    color: var(--color-text);
-    font-weight: 100;
+    background: #ede9f0;       /* light gray background */
+    padding: 1rem;             /* inner spacing */
+    border-radius: 12px;       /* rounded corners */
+    color: var(--color-text);  /* theme text color */
+    font-weight: 100;          /* extra light font */
 }
 
+/* Grid layout for cards: three columns, centered, with a max width */
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    list-style: none;
-    padding: 0;
-    margin: 4rem auto;
-    max-width: 1000px;
-    font-size: 1.6rem;
-    /* text-align: center; */
+    display: grid;                                 /* use CSS grid */
+    grid-template-columns: repeat(3, 1fr);         /* three equal columns */
+    gap: 2rem;                                     /* spacing between cards */
+    list-style: none;                              /* remove list markers */
+    padding: 0;                                    /* remove default padding */
+    margin: 4rem auto;                             /* vertical spacing, center horizontally */
+    max-width: 1000px;                             /* limit overall width */
+    font-size: 1.6rem;                             /* base font size */
+    /* text-align: center; */                      /* optional center text (commented out) */
 }
 
+/* Card title: aligns icon/image and heading to the left */
 .card-title {
-  display: flex;
-  justify-content: left;  /* centra horizontalmente img + h3 */
-  align-items: center;    
-  gap: 1rem;                
+  display: flex;                 /* use flexbox for title row */
+  justify-content: left;         /* align content to left */
+  align-items: center;           /* vertically center items */
+  gap: 1rem;                     /* space between image and text */
 }
 
-.card-title h3{
-    font-size: 2.4rem;
-    max-width: 180px;
-    text-align: left;
+/* Heading inside card title: size and text alignment */
+.card-title h3 {
+    font-size: 2.4rem;           /* heading size */
+    max-width: 180px;            /* limit width */
+    text-align: left;            /* left-align text */
 }
 
-.card-title img{
-    background: #ede9f0;
-    padding: 1rem;
-    border-radius: 20px;
+/* Image inside card title: styled box around icon */
+.card-title img {
+    background: #ede9f0;          /* light gray background */
+    padding: 1rem;                /* inner spacing */
+    border-radius: 20px;          /* rounded image container */
 }
 
-.card p{
-    font-size: 1.8rem;
-    margin-top: 1.5rem;
-    text-align: left;
-    /* max-width: 250px; */
+/* Paragraph inside card: size, top margin, and left alignment */
+.card p {
+    font-size: 1.8rem;            /* paragraph size */
+    margin-top: 1.5rem;           /* space above paragraph */
+    text-align: left;             /* left-align text */
+    /* max-width: 250px; */        /* optional max width (commented out) */
 }
 
+/* Card container: white background, padding, rounded corners */
 .card {
-    background: #FFFF;
-    padding: 2rem;
-    border-radius: 10px
+    background: #FFFF;             /* white background */
+    padding: 2rem;                 /* inner spacing */
+    border-radius: 10px           /* rounded corners */
 }
 
+/* List inside card: horizontal list, centered, with spacing */
 .card ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    gap: 3rem;
-    padding: 0;
-    margin-top: 2rem;
+    display: flex;                 /* flex list */
+    flex-direction: row;           /* horizontal items */
+    list-style: none;              /* remove bullets */
+    justify-content: center;       /* center items */
+    gap: 3rem;                     /* spacing */
+    padding: 0;                    /* remove default padding */
+    margin-top: 2rem;              /* space above list */
 }
 
+/* List items and sub-link buttons inside card: gray background, padding */
 .card ul li,
 .card a.card-sub {
-  background: #ede9f0;      
-  padding: 0.8rem;           
-  border-radius: 10px;
-  color: var(--color-text);
-  font-weight: 100;
-  font-size: 1.6rem;        
-  text-decoration: none;    
-  display: inline-block;   
+  background: #ede9f0;             /* light gray background */
+  padding: 0.8rem;                 /* inner spacing */
+  border-radius: 10px;             /* rounded corners */
+  color: var(--color-text);        /* theme text color */
+  font-weight: 100;                /* light font */
+  font-size: 1.6rem;               /* text size */
+  text-decoration: none;           /* remove underline */
+  display: inline-block;           /* inline-block for padding */
 }
 
+/* Link inside card: block-level for margin, left-aligned text */
 .card a {
-  display: inline-block;  /* para que el margin-top funcione */
-  margin-top: 1.5rem;
-  font-size: 1.6rem;      /* acorde al texto */
-  text-decoration: none;
-  color: var(--color-text);
-  text-align: left;
+  display: inline-block;           /* allow margin-top */
+  margin-top: 1.5rem;              /* space above link */
+  font-size: 1.6rem;               /* link text size */
+  text-decoration: none;           /* remove underline */
+  color: var(--color-text);        /* theme text color */
+  text-align: left;                /* left-align text */
 }
 
-.card a:hover{
-    color: var(--color-accent);
+/* Hover state for links: change to accent color */
+.card a:hover {
+    color: var(--color-accent);    /* use theme accent on hover */
 }
 
+/* =============================
+   Mobile layout (up to 768px)
+   ============================= */
 @media (max-width: 768px) {
-  /* =====================================================
-     Estructura de la sección
-     ===================================================== */
+  /* Center titles on small screens */
   .wwd-title,
   .wwd-sub {
-    text-align: center;
+    text-align: center;            /* center-align text */
   }
 
+  /* Stack the items list vertically and center */
   .wwd-items {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    flex-direction: column;        /* vertical list */
+    align-items: center;           /* center items */
+    gap: 1rem;                     /* space between items */
+    margin-top: 1.5rem;            /* top margin */
   }
 
-  /* pasar de 3 columnas a 1 columna */
+  /* Convert card grid to single column */
   .card-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    max-width: 90%;
-    margin: 3rem auto;
+    display: grid;                   
+    grid-template-columns: 1fr;    /* one column */
+    gap: 1.5rem;                   /* spacing */
+    max-width: 90%;                /* narrow max width */
+    margin: 3rem auto;             /* vertical margin, center */
   }
 
-@media (max-width: 768px) {
-  /* 1) Tags “qué hacemos” en fila centrada */
+  /* Override for items list to force row on small screens */
   .wwd-items {
-    flex-direction: row !important;    /* fila */
-    flex-wrap: nowrap;                 /* si caben los 3 sin saltar */
-    justify-content: center;           /* centrados */
-    gap: 1rem;
-    margin-top: 3rem;
+    flex-direction: row !important; /* force horizontal */
+    flex-wrap: nowrap;              /* no wrapping */
+    justify-content: center;        /* center items */
+    gap: 1rem;                      /* spacing */
+    margin-top: 3rem;               /* top margin */
   }
 
-  /* 2) Grid de 1 columna con items centrados */
+  /* Center single-column cards and set width */
   .card-grid {
-    grid-template-columns: 1fr;        /* 1 card por fila */
-    justify-items: center;             /* centra la card dentro del grid */
-    gap: 1.5rem;
-    max-width: 90%;
-    margin: 3rem auto;
+    grid-template-columns: 1fr;      /* one card per row */
+    justify-items: center;           /* center card within grid */
+    gap: 1.5rem;                     /* spacing */
+    max-width: 90%;                  /* narrow width */
+    margin: 3rem auto;               /* center grid */
   }
 
+  /* Card width constraints on small screens */
   .card {
-    width: 100%;
-    max-width: 350px;                  
-    padding: 1.5rem;
-    box-sizing: border-box;
+    width: 100%;                     /* full width of container */
+    max-width: 350px;                /* limit width */
+    padding: 1.5rem;                 /* inner spacing */
+    box-sizing: border-box;          /* include padding in width */
   }
 }
-}
 
-/* ===== Tablet: 769px – 1024px ===== */
+/* =============================
+   Tablet layout (769px – 1024px)
+   ============================= */
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* Slightly smaller and centered main title */
   .wwd-title {
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
+    font-size: 4rem;                 /* slightly smaller heading */
+    text-align: center;              /* center-align */
+    margin-bottom: 0.5rem;           /* small bottom margin */
   }
+  /* Subtitle adjustments for tablet */
   .wwd-sub {
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;               /* subtitle size */
+    text-align: center;              /* center-align */
+    margin-bottom: 1.5rem;           /* bottom spacing */
   }
 
+  /* Items list wraps and centers on tablet */
   .wwd-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    margin: 2rem 0;
+    display: flex;                   
+    flex-direction: row;             
+    flex-wrap: wrap;                 /* allow wrap */
+    justify-content: center;         /* center items */
+    align-items: center;             
+    gap: 1.5rem;                     /* spacing */
+    margin: 2rem 0;                  /* vertical margins */
   }
 
+  /* Two-column grid for cards on tablet */
   .card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: 85%;
-    margin: 0 auto;
-    justify-items: center;
+    display: grid;                   
+    grid-template-columns: repeat(2, 1fr); /* two columns */
+    gap: 2rem;                       /* spacing */
+    max-width: 85%;                  /* max width */
+    margin: 0 auto;                  /* center horizontally */
+    justify-items: center;           /* center cards */
   }
 
-
+  /* Card styling tweaks for hover and shadow on tablet */
   .card {
-    width: 100%;
-    max-width: 420px;
-    padding: 2rem;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    border-radius: 1.25rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;                     
+    max-width: 420px;                /* larger max width */
+    padding: 2rem;                   
+    box-sizing: border-box;          
+    background-color: #ffffff;       /* white background */
+    border-radius: 1.25rem;          /* rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
   }
   .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px);     /* lift card on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* stronger shadow */
   }
 
+  /* Center-aligned title row in each card */
   .card-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    width: 100%;
+    display: flex;                   
+    justify-content: center;         /* center icon + text */
+    align-items: center;             
+    gap: 1rem;                       
+    margin-bottom: 1rem;             /* space below title */
+    width: 100%;                     
   }
   .card-title img {
-    width: 3rem;
-    height: 3rem;
-    margin: 0;
+    width: 3rem;                     /* icon width */
+    height: 3rem;                    /* icon height */
+    margin: 0;                       
   }
   .card-title h3 {
-    font-size: 2rem;
-    margin: 0;
-    text-align: center;
+    font-size: 2rem;                 /* heading size */
+    margin: 0;                       
+    text-align: center;              /* center text */
   }
   .card p {
-    font-size: 1.75rem;
-    text-align: center;
-    margin: 0 0 1rem;
-    width: 100%;
+    font-size: 1.75rem;              /* paragraph size */
+    text-align: center;              /* center text */
+    margin: 0 0 1rem;                /* bottom margin */
+    width: 100%;                     
   }
   .card ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
-    margin: 0 0 1.5rem;
-    padding: 0;
+    display: flex;                   
+    flex-wrap: wrap;                 /* wrap tags */
+    justify-content: center;         
+    gap: 0.75rem;                    
+    margin: 0 0 1.5rem;              /* bottom margin */
+    padding: 0;                      
   }
   .card ul li {
-    list-style: none;
-    font-size: 1.6rem;
+    list-style: none;                /* remove bullets */
+    font-size: 1.6rem;               /* tag text size */
   }
   .card a {
-    display: inline-block;
-    font-size: 1.8rem;
-    text-align: center;
+    display: inline-block;           
+    font-size: 1.8rem;               /* link size */
+    text-align: center;              
   }
 }
+

@@ -104,8 +104,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;      /* Center content horizontally */
-    padding: 4rem 2rem 4rem;   /* Top, side, and bottom padding */
-    margin: 0 -2rem;           /* Maintain full-bleed effect */
+    padding: 4rem;   /* Top, side, and bottom padding */
+    padding-top: 12rem;
   }
   .hero-title {
     font-size: 3.2rem;

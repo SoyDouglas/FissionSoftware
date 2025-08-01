@@ -88,8 +88,8 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background: var(--color-primary);
-  color: #fff;
+  background: var(--color-text);
+  color: black;
   padding: 1.7rem;
   box-shadow: none;
   transition: transform 0.2s ease;

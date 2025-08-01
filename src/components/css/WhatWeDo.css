@@ -39,7 +39,7 @@
 
 /* Individual item styling: light background, padding, and rounded corners */
 .wwd-items li {
-    background: #ede9f0;       /* light gray background */
+    background: var(--color-text-alt);       /* light gray background */
     padding: 1rem;             /* inner spacing */
     border-radius: 12px;       /* rounded corners */
     color: var(--color-text);  /* theme text color */
@@ -72,11 +72,12 @@
     font-size: 2.4rem;           /* heading size */
     max-width: 180px;            /* limit width */
     text-align: left;            /* left-align text */
+    color: var(--color-text);
 }
 
 /* Image inside card title: styled box around icon */
 .card-title img {
-    background: #ede9f0;          /* light gray background */
+    background: var(--color-text-alt);          /* light gray background */
     padding: 1rem;                /* inner spacing */
     border-radius: 20px;          /* rounded image container */
 }
@@ -86,12 +87,12 @@
     font-size: 1.8rem;            /* paragraph size */
     margin-top: 1.5rem;           /* space above paragraph */
     text-align: left;             /* left-align text */
-    /* max-width: 250px; */        /* optional max width (commented out) */
+    color: var(--color-text-alt);
 }
 
 /* Card container: white background, padding, rounded corners */
 .card {
-    background: #FFFF;             /* white background */
+    background: var(--color-background);             /* white background */
     padding: 2rem;                 /* inner spacing */
     border-radius: 10px           /* rounded corners */
 }
@@ -110,7 +111,7 @@
 /* List items and sub-link buttons inside card: gray background, padding */
 .card ul li,
 .card a.card-sub {
-  background: #ede9f0;             /* light gray background */
+  background: var(--color-text-alt);             /* light gray background */
   padding: 0.8rem;                 /* inner spacing */
   border-radius: 10px;             /* rounded corners */
   color: var(--color-text);        /* theme text color */

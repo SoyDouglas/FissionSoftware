@@ -96,7 +96,7 @@
 }
 
 .header-cta:hover {
-  background: var(--color-secondary);
+  background: rgb(231, 230, 230);
 }
 
 /* Mobile toggle */

@@ -3,6 +3,8 @@
     background-color: var(--color-surface); /* use theme background color */
     font-family: var(--font-body);              /* use theme body font */
     padding: 1rem;                              /* inner spacing */
+    position: relative;
+    overflow: hidden;
 }
 
 /* Inner text wrapper: centers content vertically in a column */
@@ -94,7 +96,9 @@
 .card {
     background: var(--color-background);             /* white background */
     padding: 2rem;                 /* inner spacing */
-    border-radius: 10px           /* rounded corners */
+    border-radius: 10px;          /* rounded corners */
+    position: relative;
+    z-index: 2;
 }
 
 /* List inside card: horizontal list, centered, with spacing */
@@ -288,3 +292,18 @@
   }
 }
 
+.WhatWeDo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;  /* altura del difuminado */
+  background: linear-gradient(
+    to bottom,
+    rgba(247, 245, 248, 0) 0%,   /* transparente arriba (RGB de #f7f5f8) */
+    var(--color-background)               100%   /* color sólido abajo */
+  );
+  pointer-events: none;  /* deja pasar clics */
+  z-index: 1;            /* por encima del contenido */
+}

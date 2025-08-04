@@ -298,7 +298,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 300px;  /* altura del difuminado */
+  height: 550px;  /* altura del difuminado */
   background: linear-gradient(
     to bottom,
     rgba(247, 245, 248, 0) 0%,   /* transparente arriba (RGB de #f7f5f8) */

@@ -2,4 +2,103 @@
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: var(--font-body);
+    padding-top: 8rem;
+    padding: 8rem 0 0;
+    max-width: 80ch;
+    margin: 0 auto;
 }
+
+.timeline-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    gap: 4rem;
+    padding-top: 2rem;
+
+}
+
+.timeline-list::before {
+  left: 50%;                     /* move vertical line to exact center */
+  transform: translateX(-1px);   /* adjust for its 2px width */
+}
+
+.timeline-title {
+    font-size: 3.2rem;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+
+
+/* 1) SINGLE vertical line at 2rem from the left */
+.timeline-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 25%;
+  left: 2rem;                   /* fixed offset */
+  width: 2px;
+  background: var(--color-primary);
+  z-index: 1;
+}
+
+.timeline-item{
+    display: flex;
+    gap: 3rem;
+}
+
+.timeline-number{
+    display: flex;
+    background: var(--color-primary);
+    padding: 1.5rem;
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-step{
+    color: var(--color-text-alt);
+    font-size: 1.6rem;
+}
+
+.timeline-heading{
+    font-size: 2.8rem;
+}
+
+.timeline-text{
+    font-size: 1.8rem;
+    color: var(--color-text-alt);
+}
+
+
+
+
+.timeline-cta{
+    display: block;
+    font-size: 2rem;
+    padding: 1.5rem;
+    background: var(--color-primary);
+    color: var(--color-text);
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    margin: 2rem auto 0;
+    z-index: 2;
+}
+
+.timeline-cta:hover{
+    background: var(--color-secondary);
+    cursor: pointer;
+}
+

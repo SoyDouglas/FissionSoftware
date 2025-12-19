@@ -13,21 +13,21 @@ function Stack () {
 
       <div className='stack-grid'>
 
-        <div className='stack-grid-frontend'>
+        <section className='stack-grid-frontend'>
+            <header>Frontend</header>
+        </section>
 
-        </div>
+        <section className='stack-grid-backend'>
+            <header>Backend</header>
+        </section>
 
-        <div className='stack-grid-backend'>
+        <section className='stack-grid-mobile'>
+            <header>Mobile</header>
+        </section>
 
-        </div>
-
-        <div className='stack-grid-mobile'>
-
-        </div>
-
-        <div className='stack-grid-ia'>
-            
-        </div>
+        <section className='stack-grid-ia'>
+            <header>IA-Automatización</header>
+        </section>
       </div>
     </section>
   );

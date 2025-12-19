@@ -14,19 +14,47 @@ function Stack () {
       <div className='stack-grid'>
 
         <section className='stack-grid-frontend'>
-            <header>Frontend</header>
+            <header>🖥️ Frontend</header> 
+
+            <ul className="stack-tech-list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>Tailwind CSS</li>
+            </ul> 
         </section>
 
         <section className='stack-grid-backend'>
-            <header>Backend</header>
+            <header>🚀 Backend</header>
+
+            <ul className="stack-tech-list">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>TypeScript</li>
+                <li>PostgreSQL</li>
+            </ul>
         </section>
 
         <section className='stack-grid-mobile'>
-            <header>Mobile</header>
+            <header>📱 Mobile</header>
+
+            <ul className="stack-tech-list">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Swift</li>
+                <li>Kotlin</li>
+            </ul>  
         </section>
 
         <section className='stack-grid-ia'>
-            <header>IA-Automatización</header>
+            <header> 🤖 IA-Automatización</header>
+
+                <ul className="stack-tech-list">
+                    <li>LangChain</li>
+                    <li>RAG</li>
+                    <li>Pinecone</li>
+                    <li>Airbyte</li>
+                </ul>
         </section>
       </div>
     </section>

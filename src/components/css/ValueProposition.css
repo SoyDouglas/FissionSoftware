@@ -1,0 +1,123 @@
+.value-proposition {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    /* padding-top: 8rem; */
+    padding: 12rem 0 0;
+    max-width: 80ch;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.value-proposition{
+  position: relative;
+}
+.value-proposition::before{
+  content:"";
+  position: absolute;
+  left: 50%; top: 7rem; transform: translateX(-50%);
+  width: min(720px, 90%);
+  height: 140px;
+  background: radial-gradient(60% 60% at 50% 50%, color-mix(in oklab, var(--color-secondary) 16%, transparent) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(10px);
+}
+
+
+.value-proposition-title{
+  font-size: 3.2rem;
+  line-height: 1.15;
+  margin-bottom: 3rem;   /* más aire antes de las cards */
+}
+
+
+.value-proposition-title .highlight {
+    color: var(--color-secondary);  /* aquí usas tu variable o un color fijo */
+    font-weight: bold;            /* opcional, para resaltar más */
+}
+
+.card-list{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.4rem;
+  align-items: stretch;   /* misma altura visual */
+  justify-items: center;  /* centra contenido dentro de cada celda */
+  margin-top: 3.2rem;
+  padding: 0;
+  list-style: none;
+}
+.card-list li{
+  width: 100%;
+  max-width: 36rem;       /* línea de lectura cómoda */
+}
+
+.card-list li{
+  background: color-mix(in oklab, var(--color-surface) 88%, #fff 12%);
+  border: 1px solid color-mix(in oklab, var(--color-surface) 70%, #fff 30%);
+  border-radius: 14px;
+  padding: 2.4rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+
+.card-list li{
+  transition: transform .18s ease, box-shadow .18s ease, outline-color .18s ease;
+  outline: 0 solid transparent;
+}
+.card-list li:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.32);
+}
+.card-list li:focus-within{
+  outline-width: 2px;
+  outline-color: color-mix(in oklab, var(--color-accent) 70%, transparent);
+}
+
+.card-list li{
+  background: rgba(255,255,255,.06);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.card-title {
+  font-size: 2.2rem;
+  line-height: 1.1;
+  margin: 0;
+  text-align: center;   /* fuerza que quede centrado */
+}
+.card-text{
+  font-size: 1.7rem;
+  line-height: 1.5;
+  max-width: 28rem;             /* limita línea de lectura */
+  margin: 0 auto;               /* centra el párrafo */
+  color: color-mix(in oklab, var(--color-text) 78%, var(--color-text-alt) 22%);
+}
+
+.card-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .8rem;
+  margin-bottom: 1.2rem;
+}
+
+.card-top img {
+  width: 42px;   /* tamaño más grande del icono */
+  height: 42px;
+  display: block;   /* evita espacio raro debajo de img inline */
+  margin: 0 auto;   /* asegura centrado horizontal */
+}
+
+.card-text{
+    font-size: 1.8rem;
+    color: var(--color-text-alt);
+    margin-top: 2rem;
+}
+
+@media (max-width: 720px){
+  .value-proposition{ padding-top: 6rem; }
+  .value-proposition-title{ font-size: 2.6rem; }
+  .card-list{ grid-template-columns: 1fr; gap: 1.6rem; }
+  .card-list li{ max-width: 100%; }
+}
+
+

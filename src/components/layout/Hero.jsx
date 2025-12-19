@@ -32,7 +32,7 @@ function Hero() {
 
     return (
         <section className='Hero'>
-            <h1 className='hero-title'>Lanza tu producto en 4 semanas con nuestras soluciones de
+            <h1 className='hero-title'>Lanza tu idea en tiempo record con nuestras soluciones de
                 <span className={`accent ${isAnimating ? 'fade-out' : 'fade-in'}`}>
                     {phrases[index]}
                 </span>

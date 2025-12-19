@@ -1,0 +1,41 @@
+.stack{
+  position: relative;         
+  overflow: hidden;           
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+
+  padding: 8rem 2rem 6rem;     
+  margin: 0 auto;
+
+  max-width: none;             
+}
+
+.stack-title-section{
+  position: relative;
+  z-index: 2;                  /* ✅ encima del halo */
+  max-width: 80ch;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.stack-arc {
+  position: absolute;
+  left: 50%;
+  top: 10rem;                  /* prueba 10rem o 12rem */
+  transform: translateX(-50%);
+  width: min(1100px, 120vw);
+  height: 260px;
+  border-radius: 999px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(56, 189, 248, 0.35) 0%,
+    rgba(56, 189, 248, 0.12) 35%,
+    rgba(56, 189, 248, 0.00) 70%
+  );
+  filter: blur(18px);
+  opacity: 0.9;
+  z-index: 1;
+  pointer-events: none;
+}

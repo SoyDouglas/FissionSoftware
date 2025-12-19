@@ -1,41 +1,110 @@
+/* ===== STACK SECTION ===== */
 .stack{
-  position: relative;         
-  overflow: hidden;           
-  background-color: var(--color-background);
+  position: relative;
+  overflow: hidden;
+  background: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-body);
-
-  padding: 8rem 2rem 6rem;     
-  margin: 0 auto;
-
-  max-width: none;             
+  padding: 8rem 2rem 6rem;
 }
 
+/* TITLES */
 .stack-title-section{
   position: relative;
-  z-index: 2;                  /* ✅ encima del halo */
+  z-index: 2;
+  text-align: center;
   max-width: 80ch;
   margin: 0 auto;
-  text-align: center;
 }
 
+.stack-title{
+  font-size: 4.8rem;
+  font-weight: 800;
+}
 
-.stack-arc {
-  position: absolute;
-  left: 50%;
-  top: 10rem;                  /* prueba 10rem o 12rem */
-  transform: translateX(-50%);
-  width: min(1100px, 120vw);
-  height: 260px;
+.stack-subtitle{
+  margin-top: 1.5rem;
+  font-size: 2.2rem;
+  color: var(--color-text-alt);
+}
+
+.stack-subtitle-2{
+  margin-top: 0.6rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* ===== GRID ===== */
+.stack-grid{
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 6rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+/* ===== BLOCKS (las 4 cajas) ===== */
+.stack-grid section{
+  background: rgba(30, 41, 59, 0.55);            /* glass sobre surface */
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 18px;
+  padding: 2.4rem;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.stack-grid section:hover{
+  transform: translateY(-6px);
+  border-color: rgba(56, 189, 248, 0.35);        /* glow sutil */
+}
+
+/* HEADER DE CADA CAJA */
+.stack-grid section header{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* ===== TECH LIST ===== */
+.stack-tech-list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stack-tech-list li{
+  padding: 0.8rem 1.2rem;
   border-radius: 999px;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(56, 189, 248, 0.35) 0%,
-    rgba(56, 189, 248, 0.12) 35%,
-    rgba(56, 189, 248, 0.00) 70%
-  );
-  filter: blur(18px);
-  opacity: 0.9;
-  z-index: 1;
-  pointer-events: none;
+
+  font-size: 1.4rem;
+  color: var(--color-text);
+  background: rgba(148, 163, 184, 0.14);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+
+  transition: background 0.2s ease, color 0.2s ease;
 }
+
+.stack-tech-list li:hover{
+  background: rgba(56, 189, 248, 0.25);
+  color: var(--color-text);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px){
+  .stack-grid{
+    grid-template-columns: 1fr;
+  }
+}
+

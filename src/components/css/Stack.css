@@ -5,7 +5,7 @@
   background: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-body);
-  padding: 8rem 2rem 6rem;
+  padding: 12rem 2rem 6rem;
 }
 
 /* TITLES */
@@ -19,7 +19,6 @@
 
 .stack-title{
   font-size: 4.8rem;
-  font-weight: 800;
 }
 
 .stack-subtitle{

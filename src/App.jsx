@@ -4,6 +4,7 @@ import WhatWeDo from './components/layout/WhatWeDo'
 import Timeline from "./components/layout/Timeline"
 import ValueProposition from "./components/layout/ValueProposition"
 import Stack from "./components/layout/Stack"
+import Footer from "./components/layout/Footer"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Timeline />
       <ValueProposition />
       <Stack/>
+      <Footer/>
     </>
   )
 }
